@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:alpha="1">
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/bluedot"
+        android:contentDescription="@string/floorplan_bluedot"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#0085c3"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/bluedot_ring"
+        android:background="@drawable/bluedot_ring"
+        android:contentDescription="@string/floorplan_bluedot" />
+
+</RelativeLayout>

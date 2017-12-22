@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#000000" >
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/micelloInfoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/addVenueCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/colorWhite"
+            card_view:cardCornerRadius="7dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+            card_view:cardElevation="2dp"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/micelloNotificationLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"  >
+
+                <TextView
+                    android:id="@+id/nearByTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_notifi_header"
+                    android:textColor="@color/colorBreadCrumb"
+                    android:gravity="center"
+                    android:text="Nearby"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <ListView
+                    android:id="@+id/notilistView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:divider="@color/colorSearchBackground"
+                    android:dividerHeight="1dp"
+                    android:paddingBottom="@dimen/title_pad1"
+                    android:paddingLeft="@dimen/title_pad1"
+                    android:paddingRight="@dimen/title_pad1" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/info_imageview"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/info_button_margin_bottom"
+            android:layout_marginRight="@dimen/floor_name_pad"
+            android:background="@drawable/info_img"  />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

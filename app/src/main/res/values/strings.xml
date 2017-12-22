@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SampleApp</string>
+
+    <string name="string_add_venue">Add Venue</string>
+    <string name="string_cancel">Cancel</string>
+
+    <string name="string_qrcode">QR Code</string>
+
+
+    <string name="floorplan_bluedot">floorplan bluedot</string>
+    <string name="floorplan_image">floorplan image</string>
+    <string name="bluedot_flashlight">Flashlight</string>
+
+</resources>

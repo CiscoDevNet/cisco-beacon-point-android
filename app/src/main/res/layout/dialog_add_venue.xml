@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/colorTransparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_item_background"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="5dp"
+                android:text="Method to add organization"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBorder"
+                android:id="@+id/titleTextView" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:gravity="center"
+                android:background="@color/colorBorder"
+                android:layout_gravity="center_horizontal" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_qrcode"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@color/colorTransparent"
+                android:padding="5dp"
+                android:id="@+id/qrCodeButton"
+                android:textColor="@color/colorAddVenueBg"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:gravity="center"
+            android:background="@color/colorTransparent"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/string_cancel"
+            android:gravity="center"
+            android:background="@drawable/dialog_item_background"
+            android:padding="5dp"
+            android:id="@+id/cancelButton"
+            android:textSize="20sp"
+            android:textColor="@color/colorAddVenueBg"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

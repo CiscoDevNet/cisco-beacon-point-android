@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.android.ble.sample.customview.ZoomLayout
+        android:id="@+id/floorplan_zoomlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/floorplan_layout"
+            android:background="#ffffff">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/floorplan_image"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/floorplan_image"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/floorplanVBLayout" >
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/floorplan_bluedot"
+                android:clipChildren="false"
+                android:alpha="0">
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bluedot_flashlight"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/bluedot_flashlight"
+                        android:contentDescription="@string/bluedot_flashlight"
+                        android:backgroundTint="#26d9fb"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/bluedot_layout" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:id="@+id/bluedot_flashlight_image"
+                        android:background="@drawable/bluedot"
+                        android:contentDescription="@string/floorplan_bluedot"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="#0085c3"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/bluedot_ring"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bluedot_ring"
+                        android:contentDescription="@string/floorplan_bluedot" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </com.android.ble.sample.customview.ZoomLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorTransparent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorTransparent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_centerVertical="true"
+                    android:text="Snap to path"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/lockScreenNotificationTextView" />
+
+                <ToggleButton
+                    android:layout_width="@dimen/toggle_width"
+                    android:layout_height="@dimen/toggle_height"
+                    android:background="@drawable/toggle_selector"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    android:id="@+id/snaptopathToggleButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorTransparent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_centerVertical="true"
+                    android:text="Show all path"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/showallpathTextView" />
+
+                <ToggleButton
+                    android:layout_width="@dimen/toggle_width"
+                    android:layout_height="@dimen/toggle_height"
+                    android:background="@drawable/toggle_selector"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    android:id="@+id/showallpathToggleButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorTransparent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorBlack"
+                    android:layout_centerVertical="true"
+                    android:text="Wayfinding"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/wayfindingTextView" />
+
+                <ToggleButton
+                    android:layout_width="@dimen/toggle_width"
+                    android:layout_height="@dimen/toggle_height"
+                    android:background="@drawable/toggle_selector"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn=""
+                    android:id="@+id/wayfindingToggleButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorTransparent"
+                >
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

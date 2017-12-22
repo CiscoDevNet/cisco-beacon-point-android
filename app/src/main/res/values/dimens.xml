@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toggle_width">50dp</dimen>
+    <dimen name="toggle_height">27dp</dimen>
+
+    <dimen name="info_button_margin_bottom">18dp</dimen>
+    <dimen name="floor_name_pad">15dp</dimen>
+    <dimen name="title_pad1">7dp</dimen>
+    <dimen name="title_pad2">3dp</dimen>
+
+</resources>
